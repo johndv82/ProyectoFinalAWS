@@ -1,0 +1,19 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyectoi Final Curso CloudComputing Idat",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndv82/ProyectoFinalAWS.git"
+  },
+  "author": "Yhon Denos Valencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johndv82/ProyectoFinalAWS/issues"
+  },
+  "homepage": "https://github.com/johndv82/ProyectoFinalAWS#readme"
+}
