@@ -1,5 +1,6 @@
 resource "aws_ecr_repository" "app_repo" {
   name = var.project
+  force_delete = true 
 }
 
 
@@ -42,7 +43,6 @@ resource "aws_ecs_task_definition" "task" {
     }
   ])
 }
-
 
 resource "aws_ecs_service" "service" {
   name            = "${var.project}-service"
