@@ -26,7 +26,7 @@ jobs:
         run: npm test || echo "Tests skipped"
 
       - name: Build Docker image
-        run: docker build -t $ECR_REPOSITORY .
+        run: docker build -t $ECR_REPOSITORY ./app
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
