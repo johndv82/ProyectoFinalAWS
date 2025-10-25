@@ -4,6 +4,7 @@
   "description": "Proyectoi Final Curso CloudComputing Idat",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "test.js"
   },
   "repository": {
