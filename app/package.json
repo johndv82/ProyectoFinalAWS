@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/johndv82/ProyectoFinalAWS/issues"
   },
-  "homepage": "https://github.com/johndv82/ProyectoFinalAWS#readme"
+  "homepage": "https://github.com/johndv82/ProyectoFinalAWS#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
 }

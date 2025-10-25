@@ -4,6 +4,8 @@
 *.tfstate.backup
 .terraform.lock.hcl
 
-# Node.js
-node_modules/
-.env
+# Ignorar todas las carpetas node_modules en cualquier parte del proyecto
+**/node_modules/
+
+# Ignorar archivos de entorno
+**/.env
