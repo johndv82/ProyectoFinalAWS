@@ -1,4 +1,6 @@
 name: CI/CD - Deploy to AWS ECS Fargate
+run: |
+  aws ecs update-service --cluster node-ecs-fargate-cluster --service node-ecs-fargate-service --force-new-deployment
 
 on:
   push:
