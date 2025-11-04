@@ -74,7 +74,7 @@ jobs:
         run: |
           IMAGE="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}:${IMAGE_TAG}"
           TASK_DEF=$(aws ecs describe-task-definition \
-            --task-definition node-ecs-fargate-service \
+            --task-definition node-ecs-fargate-task \
             --query taskDefinition)
           echo "$TASK_DEF" | jq --arg IMAGE "$IMAGE" '.containerDefinitions[0].image=$IMAGE' > new-task-def.json
           NEW_TASK_DEF_ARN=$(aws ecs register-task-definition \
