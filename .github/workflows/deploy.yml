@@ -50,8 +50,7 @@ jobs:
         run: docker build -t $ECR_REPOSITORY:${{ env.IMAGE_TAG }} ./app
 
       - name: Tag Docker image for ECR
-        run: docker tag $ECR_REPOSITORY:${{ env.IMAGE_TAG }} \
-          $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:${{ env.IMAGE_TAG }}
+        run: docker tag $ECR_REPOSITORY:${{ env.IMAGE_TAG }} $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:${{ env.IMAGE_TAG }}
 
       - name: Push Docker image to ECR
         run: docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:${{ env.IMAGE_TAG }}
